@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    height: 100vw;
+    font-family: 'Days One', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+  
+  }
+
+/* Titles, subtitles and paragraph styles*/
+h1{
+    font-family: 'Days One', sans-serif;
+    color: #50514F;
+    font-weight: bold;
+}
+
+h4{
+    font-family: 'Quicksand', sans-serif;
+    color: #50514F;
+    font-weight: 500; 
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    color: #50514F;
+    font-weight: regular;
+}
+
+/*Principal container*/
+.containerppal{
+    height: 100%;
+    /* border: 1px solid black; */
+    background-color:#FFF6F2;
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Welcome Section*/
+
+.welcome{
+    background-image: url('../assets/images/Colorful-Geometric-Background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: scale-down;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.welcome .name{
+    height: 20%;
+    margin-top: 30%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome .name h1{
+    text-align: center;
+    font-size: 5vw;
+    /* padding: 20px; */
+    color: #FFF6F2;
+    /* margin-top: 0%; */
+}
