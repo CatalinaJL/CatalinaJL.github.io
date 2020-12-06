@@ -220,6 +220,7 @@ p{
     visibility: hidden;
     opacity: 0;
     transition: 00.3s ease-in-out;
+    line-height: 1.6;
 }
 
 .card:hover .content{
