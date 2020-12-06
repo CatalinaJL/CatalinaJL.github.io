@@ -185,7 +185,8 @@ p{
     height: 215px;
     background: #fff;
     margin-top: 10vh;
-    margin-left: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     display: 0 5px 202px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out
 }
@@ -204,8 +205,10 @@ p{
 }
 
 .card .imgBx img{
-    height: 35vh;
-    margin-left: 1vw;
+    height: 30vh;
+    width:14vw;
+    margin-left: 2vw;
+    margin-top:3vh;
     border-radius: 4px;
 }
 
