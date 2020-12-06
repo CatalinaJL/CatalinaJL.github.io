@@ -153,6 +153,30 @@ p{
     margin-bottom: 10vh;
 }
 
+.proyects .containerproyects{
+    width: 90vw;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10vh;
+    border: 1px solid blue;
+}
+
+.containerproyects .row1, .row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    border: 1px solid crimson;
+}
+
+.work{
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
 /* Section Contact*/
 .contact{
     height: 100vh;
@@ -171,7 +195,16 @@ p{
     margin-top: 5vh;
     margin-bottom: 10vh;
 }
-
+.contact .contactcontainer{
+    width: 90vw;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10vh;
+    border: 1px solid blue;
+}
 
 /*Media Queries*/
 
