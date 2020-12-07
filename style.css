@@ -153,7 +153,7 @@ p{
     margin-bottom: 10vh;
 }
 
-.proyects .containerproyects{
+/* .proyects .containerproyects{
     width: 90vw;
     height: inherit;
     display: flex;
@@ -162,15 +162,7 @@ p{
     align-items: center;
     margin-left: 10vh;
     /* border: 1px solid blue; */
-}
-
-.containerproyects .row1, .row2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    /* border: 1px solid crimson; */
-}
+/* } */ */
 
 .work{
     margin-right: 5vw;
@@ -178,62 +170,23 @@ p{
 }
 
 /*Cards for display of proyects */
-
+ 
 .card{
-    position: relative;
-    max-width: 300px;
-    height: 215px;
-    background: #F2FFFD;
-    margin-top: 10vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    display: 0 5px 202px rgba(0,0,0,0.5);
-    transition: 0.3s ease-in-out
+    width: 15vw;
+    height: 70vh;
+    background-color: burlywood;
 }
 
-.card:hover{
-    height: 420px;
-}
-
-.card .imgBx{
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top:-60px;
-    left:20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card .imgBx img{
-    height: 30vh;
-    width:14vw;
+.card-img-top{
+    width: 10vw;
     margin-left: 2vw;
-    margin-top:3vh;
-    border-radius: 4px;
+    margin-right: 2vw;
 }
 
-.card .content{
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 15px;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: 00.3s ease-in-out;
-    line-height: 1.6;
+.card-text{
+    font-size: 2vh;
 }
 
-.card .content h2{
-    color: #8E097B; 
-
-}
-
-.card:hover .content{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
-}
 
 /* Section Contact*/
 .contact{
