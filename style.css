@@ -43,7 +43,7 @@ p{
 /*Welcome Section*/
 
 .welcome{
-    background-image: url('../assets/images/Colorful-Geometric-Background.svg');
+    background-image: url('./assets/images/Colorful-Geometric-Background.svg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -330,7 +330,7 @@ footer{
  /* border: 1px solid salmon; */
  margin-top: 2vh;
  text-align: center;
- background-image: url('../assets/images/Colorful-Geometric-Background.svg');
+ background-image: url('./assets/images/Colorful-Geometric-Background.svg');
  background-position: bottom;
  background-repeat: no-repeat;
  background-size: cover;
