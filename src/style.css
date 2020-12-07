@@ -17,7 +17,7 @@
 
 h4{
     font-family: 'Quicksand', sans-serif;
-    color: #50514F;
+    color: #8E097B;;
     font-weight: 500; 
 }
 
@@ -98,7 +98,7 @@ p{
     justify-content: space-between;
     align-items: center;
     margin-left: 10vh;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .containerabout .photo{
@@ -161,7 +161,7 @@ p{
     justify-content: space-around;
     align-items: center;
     margin-left: 10vh;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .containerproyects .row1, .row2{
@@ -169,7 +169,7 @@ p{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    border: 1px solid crimson;
+    /* border: 1px solid crimson; */
 }
 
 .work{
@@ -223,6 +223,11 @@ p{
     line-height: 1.6;
 }
 
+.card .content h2{
+    color: #8E097B; 
+
+}
+
 .card:hover .content{
     visibility: visible;
     opacity: 1;
@@ -256,7 +261,7 @@ p{
     justify-content: space-evenly;
     align-items: center;
     margin-left: 10vh;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .contactcontainer a{
@@ -322,7 +327,7 @@ p{
 footer{
  width: 100vw;
  height: 20%;
- border: 1px solid salmon;
+ /* border: 1px solid salmon; */
  margin-top: 2vh;
  text-align: center;
  background-image: url('../assets/images/Colorful-Geometric-Background.svg');
@@ -350,22 +355,32 @@ footer p{
         justify-content: center;
     }
 
-    .aboutMe{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .welcome .name{
+        height: 50vh;
+        margin-top:40%;
     }
 
-    .aboutMe .title{
+    .aboutMe, .proyects, .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .aboutMe .title, 
+    .proyects .title, 
+    .contact .title{
     height: 2vh;
     text-align: center;
     font-size: 3vw;
     font-weight: 600;
     color: #8E097B;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     }
-    .aboutMe .containerabout{
+
+    .aboutMe .containerabout, 
+    .proyects .containerproyects, 
+    .contact .contactcontainer{
         width: 90%;
         height: 100vh;
         margin-left: 3vh;
@@ -380,9 +395,10 @@ footer p{
     .photo .myphoto{
         margin: 1vh;
         margin-left: 5vh;
+        margin-bottom: 0vh;
     }
     
-    .textaboutme{
+    .textaboutme, .text{
         width: 78vw;
         margin: 1vh;
         display: flex;
@@ -390,9 +406,61 @@ footer p{
         justify-content: stretch;
         line-height: 1.6;
         font-weight: 500;
-        font-size: 2vh;
+        font-size: 4vw;
         text-align: center;
         margin-left: 0vh;
+    }
+
+    .containerproyects .row1, .row2{
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        width: 90vw;
+        height: 50%;
+    }
+
+    .card .imgBx{
+        width: 150px;
+        height: 150px;
+        top: -40px;
+        left: 20vw;
+    }
+
+    .card .imgBx img{
+        height: 20vh;
+        width: 100%;
+    }
+
+    .card .content{
+        visibility: visible;
+        opacity: unset;
+    }
+
+    .detailsproyect , .technology{
+        display: none;
+    }
+
+    .text .h2{
+        margin-top: 16vh;
+        font-size: small;
+    }
+
+    .linkproyect{
+        font-size: 15px;
+    }
+
+    .contactcontainer .icons{
+        margin-left: 8vw;
+        margin-right: 8vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .contactcontainer a{
+        width: 60px;
+        height: 60px;
+        line-height: 60px !important;
+        margin-left: 15w;
     }
     
 }
