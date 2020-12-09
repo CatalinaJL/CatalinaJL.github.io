@@ -4,29 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Days+One&family=Quicksand:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Jura&family=Krona+One&display=swap" rel="stylesheet"> 
+<!--FontAwesome-->
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <!--FontAwesome-->
+    
     <link
       rel="stylesheet"
       href="./assets/font-awesome-4.7.0/css/font-awesome.min.css"
     />
     <!--Bootstrap-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
     <!--CSS-->
     <link rel="stylesheet" href="style.css" />
     <title>CJL</title>
@@ -36,6 +30,7 @@
     <div class="containerppal">
       <!--First Section Welcome-->
       <section class="welcome">
+        <!-- <img src="./assets/images/hiclipart.com.png" alt=""> -->
         <div class="name">
           <h1>CATALINA JARA LIRA</h1>
           <h1>FRONT-END DEVELOPER</h1>
@@ -86,95 +81,163 @@
         </div>
       </section>
       <!--Third section Proyects -->
-      <section class="proyects"> 
+      <section class="proyects">
         <div class="title">
           <h1>Proyectos</h1>
         </div>
-        <div class="container proyects">
-          <div class="row">
-            <!--First Card-->
+
+        <div
+          class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 "
+        >
+          <!--First Card-->
+          <div class="col mb-4">
             <div class="card">
-              <img class="card-img-top" src="./assets/images/ComidaParaTodos-removebg-preview.png" alt="Card image cap">
+              <img
+                class="card-img-top"
+                src="./assets/images/ComidaParaTodos-removebg-preview.png"
+                alt="Card image cap"
+              />
               <div class="card-body">
-                <p class="card-text"> Proyecto colaborativo con equipo compuesto por Front-End
-                  Developers, y Ux Designer, que consistio en el rediseño de
-                  la página web de la ONG "Comida Para Todos", la cual combate
-                  la inseguridad alimentaria en Chile.</p>
-                  <p class="card-text"> Tecnologías Utilizadas: ReactJS, Firebase, CSS, Bootstrap </p>
-                  <a
-                  href="https://github.com/adbarquitectura/SCL014-comida-para-todos" class="card-link"
+                <p class="card-text">
+                  Proyecto colaborativo con equipo compuesto por Front-End
+                  Developers, y Ux Designer, que consistio en el rediseño de la
+                  página web de la ONG "Comida Para Todos", la cual combate la
+                  inseguridad alimentaria en Chile.
+                </p>
+                <p class="card-text">
+                  Tecnologías Utilizadas: ReactJS, Firebase, CSS, Bootstrap
+                </p>
+                <a
+                  href="https://github.com/adbarquitectura/SCL014-comida-para-todos"
+                  class="card-link"
                   >Repositorio</a
                 >
                 <a href="" class="card-link">Demo</a>
               </div>
             </div>
-           <!-- Second Card-->
-           <div class="card">
-            <img class="card-img-top" src="./assets/images/LogoReia2.png" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text"> Proyecto diseñado para cliente de fantasía "Reía, Cafetería
-                y Tetería", con el objeto de poder digitalizar el proceso de
-                toma de pedidos por parte de los meseros, y con la
-                elaboración de estos por la cocina.</p>
-                <p class="card-text"> Tecnologías Utilizadas: ReactJS, CSS, JavaScript, Firebase. </p>
+          </div>
+          <!-- Second Card -->
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./assets/images/reia.svg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Proyecto diseñado para cliente de fantasía "Reía, Cafetería y
+                  Tetería", con el objeto de poder digitalizar el proceso de
+                  toma de pedidos por parte de los meseros, y con la elaboración
+                  de estos por la cocina.
+                </p>
+                <p class="card-text">
+                  Tecnologías Utilizadas: ReactJS, CSS, JavaScript, Firebase.
+                </p>
                 <a
-                href="https://github.com/adbarquitectura/SCL014-comida-para-todos" class="card-link"
-                >Repositorio</a
-              >
-              <a href="" class="card-link">Demo</a>
+                  href="https://github.com/adbarquitectura/SCL014-comida-para-todos"
+                  class="card-link"
+                  >Repositorio</a
+                >
+                <a href="" class="card-link">Demo</a>
+              </div>
             </div>
           </div>
-          <!-- Third Card -->
-          <div class="card">
-             <img class="card-img-top" src="./assets/images/witLogo1.png" alt="Card image cap">
-             <div class="card-body">
-                <p class="card-text"> WIT es una red social que busca crear una comunidad de
-                mujeres dentro del mundo Tech, para que cada día seamos más
-                y podamos disminuir la brecha de género en está área.</p>
-                <p class="card-text"> Tecnologías Utilizadas:HTML, CSS, JavaScript, Firebase</p>
+            <!-- Third Card -->
+            <div class="col mb-4">
+              <div class="card mb">
+                <img
+                  class="card-img-top"
+                  src="./assets/images/wit.svg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    WIT es una red social que busca crear una comunidad de
+                    mujeres dentro del mundo Tech, para que cada día seamos más
+                    y podamos disminuir la brecha de género en está área.
+                  </p>
+                  <p class="card-text">
+                    Tecnologías Utilizadas:HTML, CSS, JavaScript, Firebase
+                  </p>
                   <a
-                  href="https://github.com/adbarquitectura/SCL014-comida-para-todos" class="card-link"
-                  >Repositorio</a>
+                    href="https://github.com/adbarquitectura/SCL014-comida-para-todos"
+                    class="card-link"
+                    >Repositorio</a
+                  >
                   <a href="" class="card-link">Demo</a>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <!--Fourth Card -->
-          <div class="card">
-            <img class="card-img-top" src="./assets/images/Varitas más claras.png" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text"> Proyecto diseñado para todas aquellas personas que quieren
-              empezar a jugar "Wizards Unite", y no tienen conocimiento
-              del mundo de Harry Potter.</p>
-              <p class="card-text"> Tecnologías Utilizadas:HTML, CSS, JavaScript</p>
-              <a
-              href="https://github.com/CatalinaJL/SCL014-data-lovers/tree/master/src" class="card-link"
-              >Repositorio</a>
-              <a href="https://catalinajl.github.io/SCL014-data-lovers/src/Index.html" class="card-link">Demo</a>
+              <!-- Fourth Card -->
+              <div class="col mb-4">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/images/Varitas más claras.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Proyecto diseñado para todas aquellas personas que quieren
+                      empezar a jugar "Wizards Unite", y no tienen conocimiento
+                      del mundo de Harry Potter.
+                    </p>
+                    <p class="card-text">
+                      Tecnologías Utilizadas:HTML, CSS, JavaScript
+                    </p>
+                    <a
+                      href="https://github.com/CatalinaJL/SCL014-data-lovers/tree/master/src"
+                      class="card-link"
+                      >Repositorio</a
+                    >
+                    <a
+                      href="https://catalinajl.github.io/SCL014-data-lovers/src/Index.html"
+                      class="card-link"
+                      >Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
+                <!-- Fifth Card -->
+                <div class="col mb-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/Proyecto X.PNG"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Proyecto X busca entregar una nueva forma de crear
+                        claves y dar más seguridad a las personas, sin tener que
+                        crear distintas claves para cada una de sus cuentas.
+                      </p>
+                      <p class="card-text">
+                        Tecnologías Utilizadas:HTML, CSS, JavaScript
+                      </p>
+                      <a
+                        href="https://github.com/PamelaBarboza/SCL014-cipher"
+                        class="card-link"
+                        >Repositorio</a
+                      >
+                      <a
+                        href="https://pamelabarboza.github.io/SCL014-cipher/src/index.html"
+                        class="card-link"
+                        >Demo</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Cards-->
             </div>
-          </div>
-
-          <!--Fifth Card -->
-          <div class="card">
-            <img class="card-img-top" src="./assets/images/Proyecto X.PNG" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text"> Proyecto X busca entregar una nueva forma de crear claves y
-              dar más seguridad a las personas, sin tener que crear
-              distintas claves para cada una de sus cuentas.</p>
-              <p class="card-text"> Tecnologías Utilizadas:HTML, CSS, JavaScript</p>
-              <a
-              href="https://github.com/PamelaBarboza/SCL014-cipher" class="card-link"
-              >Repositorio</a>
-              <a href="https://pamelabarboza.github.io/SCL014-cipher/src/index.html" class="card-link">Demo</a>
-            </div>
-          </div>
-      </div>
-</section>
-      
+      </section>
 
       <!-- Fourth section Contact -->
       <section class="contact">
-        <div class="title">Contacto</div>
+        <div class="title">
+          <h1>Contacto</h1>
+        </div>
         <div class="contactcontainer">
           <div class="text">
             <p>Gracias por interesarte en mi trabajo!!</p>
@@ -199,10 +262,9 @@
           </div>
         </div>
       </section>
-      <footer>
-        <p>Desarrollado por CJL, Santiago, 2020</p>
-      </footer>
     </div>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <!--JS-->
     <script src="/src/main.js"></script>
   </body>
