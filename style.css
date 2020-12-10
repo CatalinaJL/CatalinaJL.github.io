@@ -1,55 +1,60 @@
 * {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    /* height: 100vw; */
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Lato', sans-serif;  
     font-family: 'Days One', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    /* background-color:#FFF6F2; */
-  
+    /* font-family: 'Bungee Inline', cursive; */
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Krona One', sans-serif;
+    
   }
 
 /* Titles, subtitles and paragraph styles*/
-/* h1{
-    font-family: 'Days One', sans-serif;
-    /* color: #50514F;
-    font-weight: bold; */
-/*} */
-
-h4{
-    font-family: 'Quicksand', sans-serif;
-    color: #8E097B;;
-    font-weight: 500; 
+h1{
+    /* font-family: 'Bungee Inline', cursive; */
+    /* font-family: 'Days One', sans-serif; */
+    font-family: 'Krona One', sans-serif;
+    color: #5b0747;
+    font-weight: 500;
 }
 
+/* h4{
+    font-family:'Lato', sans-serif;
+    color: #5b0747;
+    font-weight: 500; 
+} */
+
 p{
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Jura', sans-serif;
     color: #50514F;
-    font-weight: regular;
 }
 
 /*Principal container*/
 .containerppal{
-    /* height: 100vw; */
     width: 100vw;
     /* border: 1px solid black; */
-    background-color:#F2FFFD;
+    /* background-color:#F2FFFD; */
     margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    overflow-y: hidden;
 }
 
 /*Welcome Section*/
 
 .welcome{
-    background-image: url('./assets/images/Colorful-Geometric-Background.svg');
-    background-position: bottom;
+    background-image: url('./assets/images/hiclipart.com.png');
     background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
     height: 100vh;
-    width: 100%;
-    object-fit: scale-down;
+    width: 100vw;
+    /* object-fit: scale-down; */
     display: flex;
     justify-content: center;
 }
@@ -65,9 +70,12 @@ p{
 
 .welcome .name h1{
     text-align: center;
-    font-family: 'Days One', sans-serif;
+    /* font-family: 'Days One', sans-serif; */
     font-size: 5vw;
-    color: #FFF6F2;
+    color: #5b0747;
+    /* color: #fff6f2; */
+    /* color: #8E097B; */
+    /* font-family: 'Black Ops One', cursive; */
 }
 
 /*About Me Section*/
@@ -88,6 +96,7 @@ p{
     color: #8E097B;
     margin-top: 5vh;
     margin-bottom: 10vh;
+    font-family: 'Black Ops One', cursive;
 }
 
 .aboutMe .containerabout{
@@ -109,7 +118,7 @@ p{
     width: 70%;
     margin: 15vh;
     object-fit: contain;
-    border: 2px solid #8E097B;
+    border: 4px solid #5D0B4B;
 }
 
 .textaboutme{
@@ -119,7 +128,7 @@ p{
     flex-direction: column;
     justify-content: stretch;
     line-height: 1.6;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .descriptionMe, .softskills, .hardskills{
@@ -127,6 +136,7 @@ p{
 }
 
 .crosstext{
+    font-family: 'Jura', sans-serif;
     text-decoration: line-through;
 }
 
@@ -136,7 +146,7 @@ p{
 
 /* Section Proyect */
 .proyects{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -144,96 +154,45 @@ p{
 }
 
 .proyects .title{
+
     height: 2vh;
     text-align: center;
     font-size: 2vw;
     font-weight: 600;
-    color: #8E097B;
     margin-top: 5vh;
     margin-bottom: 10vh;
 }
 
-.proyects .containerproyects{
-    width: 90vw;
-    height: inherit;
+.row{
+    padding: 50px;
+    max-width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 10vh;
-    /* border: 1px solid blue; */
+    justify-content: center;
 }
-
-.containerproyects .row1, .row2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    /* border: 1px solid crimson; */
-}
-
-.work{
-    margin-right: 5vw;
-    margin-left: 5vw;
-}
-
 /*Cards for display of proyects */
-
+ 
 .card{
-    position: relative;
-    max-width: 300px;
-    height: 215px;
-    background: #F2FFFD;
-    margin-top: 10vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    display: 0 5px 202px rgba(0,0,0,0.5);
-    transition: 0.3s ease-in-out
+    max-width: 305px;
 }
 
-.card:hover{
-    height: 420px;
-}
-
-.card .imgBx{
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top:-60px;
-    left:20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card .imgBx img{
-    height: 30vh;
-    width:14vw;
+.card-img-top{
+    width: 30%;
+    height: 10vh;
     margin-left: 2vw;
-    margin-top:3vh;
-    border-radius: 4px;
+    margin-right: 2vw;
+    margin-top: 1vh;
 }
 
-.card .content{
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 15px;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: 00.3s ease-in-out;
-    line-height: 1.6;
+.card-link{
+    font-size: small;
+    color: #5D0B4B !important;
 }
+/*
+.card-text{
+    font-size: 2vh;
+} */
 
-.card .content h2{
-    color: #8E097B; 
-
-}
-
-.card:hover .content{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
-}
 
 /* Section Contact*/
 .contact{
@@ -252,6 +211,7 @@ p{
     color: #8E097B;
     margin-top: 5vh;
     margin-bottom: 10vh;
+    font-family: 'Black Ops One', cursive;
 }
 .contact .contactcontainer{
     width: 90vw;
@@ -272,7 +232,7 @@ p{
     margin: 0 5px;
     text-align: center;
     display: inline-block;
-    color: #8E097B;
+    color: #5b0747;
     -webkit-transition: all 0.27s cubic-bezier(0.300,0.100,0.580, 1.000);
     -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
     -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
@@ -295,7 +255,7 @@ p{
     position: absolute;
     top: 0;
     left: 0;
-    border: 3px solid #8E097B;
+    border: 3px solid #5b0747;
     
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -319,28 +279,11 @@ p{
 }
 
 .contactcontainer a:hover::before{
-    background: #50514F;
+    background: #5D0B4B;
 }
 
 /* Footer*/
 
-footer{
- width: 100vw;
- height: 20%;
- /* border: 1px solid salmon; */
- margin-top: 2vh;
- text-align: center;
- background-image: url('./assets/images/Colorful-Geometric-Background.svg');
- background-position: bottom;
- background-repeat: no-repeat;
- background-size: cover;
- object-fit: scale-down;
-}
-
-footer p{
-    color: #FFF6F2;
-    font-weight: 500;
-}
 
 
 /*Media Queries*/
@@ -466,7 +409,7 @@ footer p{
 }
 
 /* For Tablets */
-@media (min-width:451px) and (max-width:1100px){
+/* @media (min-width:451px) and (max-width:1100px){
     .welcome{
         height: 100vh;
         width: 100%;
@@ -519,4 +462,4 @@ footer p{
         text-align: center;
         margin-left: 0vh;
     }
-}
+} */
