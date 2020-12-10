@@ -68,7 +68,7 @@ nav {
     left: -5px;
     bottom: -5px;
     right: -5px;
-    background:#074d8d;
+    background:#5b0747;
     opacity: 0;
     z-index: -1;
     transition: opacity 0.3s cubic-bezier(0.75, 0, 0.25, 1);
@@ -136,7 +136,7 @@ nav {
     bottom: 0;
     right: 0;
     z-index: -1;
-    background:#074d8d;
+    background:#5b0747;
     font-size: 4rem;
     padding: 40px;
     transform: translate(100vw) rotate(45deg);
@@ -152,6 +152,10 @@ nav {
 .nav_link {
     text-decoration: none;
     color: inherit;
+}
+
+.nav_link:hover{
+    color: thistle;
 }
 .nav_list-child {
     display: none;
