@@ -412,6 +412,13 @@ nav {
 
 /* For Phones */
 @media(max-width:450px){
+    .nav_list{
+        height: 45vh;
+        width: 400px;
+    }
+    .nav_item{
+        font-size: 4vh;
+    }
     .welcome{
         height: 100vh;
         width: 100%;
@@ -485,36 +492,15 @@ nav {
         height: 50%;
     }
 
-    .card .imgBx{
-        width: 150px;
-        height: 150px;
-        top: -40px;
-        left: 20vw;
+    .row{
+        padding: 1px;
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 8vh;
+        margin-left: 1vw;
     }
-
-    .card .imgBx img{
-        height: 20vh;
-        width: 100%;
-    }
-
-    .card .content{
-        visibility: visible;
-        opacity: unset;
-    }
-
-    .detailsproyect , .technology{
-        display: none;
-    }
-
-    .text .h2{
-        margin-top: 16vh;
-        font-size: small;
-    }
-
-    .linkproyect{
-        font-size: 15px;
-    }
-
     .contactcontainer .icons{
         margin-left: 8vw;
         margin-right: 8vw;
@@ -536,6 +522,7 @@ nav {
     .nav_list{
         height: 50%;
         z-index: 0;
+        font-size: 4vh;
     }
     .welcome{
         height: 100vh;
