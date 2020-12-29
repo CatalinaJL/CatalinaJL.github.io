@@ -12,6 +12,11 @@ h1{
     font-family: 'Jura', sans-serif;
     color: #5b0747;
     font-weight: 700;
+    display: inline;
+    position: relative;
+    /* font: 200px Helvetica, Sans-Serif; */
+    letter-spacing: -5px;
+    /* color: rgba(0,0,255,0.5);  */
 }
 
 
@@ -119,7 +124,7 @@ nav {
     overflow-y: none;
     top: 0;
     left: 0;
-    bottom: 32%;
+    bottom: 30%;
     /* right: 0; */
     z-index: 0;
     background:#5b0747;
@@ -130,7 +135,7 @@ nav {
 }
 .nav_item {
     list-style: none;
-    margin-bottom:6vh;
+    margin-bottom:4vh;
 }
 .nav_item + .nav_item {
     margin-top: 20px;
@@ -171,6 +176,7 @@ nav {
     height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: #f5e6f3;
 }
 
 .welcome .name{
@@ -184,10 +190,11 @@ nav {
 
 .welcome .name h1{
     text-align: center;
-    font-size: 5rem;
+    font-size: 15vh;
     color: #5b0747;
     font-weight: bolder;
 }
+
 
 /*About Me Section*/
 
@@ -263,7 +270,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;  
     padding: 50px;
-    background-color: #ceb5cf;
+    background-color: #f5e6f3;
     
 }
 
@@ -276,9 +283,9 @@ nav {
     margin-bottom: 10vh;
 }
 
-.proyects .title h1{
+/* .proyects .title h1{
     color:white;
-}
+} */
 
 
 .row{
@@ -293,6 +300,7 @@ nav {
  
 .card{
     max-width: 305px;
+    max-height: 480px;
 }
 
 .card-img-top{
@@ -428,6 +436,11 @@ nav {
     .welcome .name{
         height: 50vh;
         margin-top:40%;
+        font-size: 2rem;
+    }
+
+    .welcome .name h1{
+        font-size: 6vh;
     }
 
     .aboutMe, .proyects, .contact{
@@ -445,7 +458,7 @@ nav {
     font-weight: 600;
     color: #8E097B;
     margin-top: 2vh;
-    margin-bottom: 2vh;
+    /* margin-bottom: 2vh; */
     }
 
     .aboutMe .containerabout, 
@@ -499,6 +512,14 @@ nav {
         margin-top: 8vh;
         margin-left: 1vw;
     }
+    .card-text{
+        font-size: 4vw;
+    }
+
+    .card-img-top{
+        width: 50%;
+        margin-left: 10vw;
+    }
     .contactcontainer .icons{
         margin-left: 8vw;
         margin-right: 8vw;
@@ -518,9 +539,15 @@ nav {
  @media (min-width:451px) and (max-width:900px){
 
     .nav_list{
-        height: 50%;
+        height: 27%;
         z-index: 0;
-        font-size: 4vh;
+        font-size: 2vh;
+        left: 0;
+        margin-bottom:2px;
+    }
+
+    .nav_item{
+        margin-bottom: 2vh;
     }
     .welcome{
         height: 100vh;
@@ -578,6 +605,10 @@ nav {
         margin-left: 0vh;
     }
 
+    .card-img-top{
+        width: 50%;
+        margin-left: 5vh;
+    }
     .card-text{
         font-size: 15px;
     }
