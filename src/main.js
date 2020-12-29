@@ -1,21 +1,10 @@
-/*Open gallery function*/
+/*Close menu when click */
 
-const openGallery = (id) =>{
-    closeAll();
-    const gallery = document.getElementById('gallery-1');
-    const card = document.getElementById('card-1');
-    gallery.classList.add('Gallery--active');
-    card.classList.add('Card--active');
-};
+let optionsList = document.querySelector('.nav_list');
+// let clickOption = document.querySelector('nav_link');
+let welcome = document.getElementById('welcome');
 
-const closeAll =() =>{
-    const galleryActv = document.querySelector('.Gallery--active');
-    const cardActv = document.querySelector('.Card--active');
-    if(galleryActv){
-        galleryActv.classList.remove('Gallery--active');
-    }
-    if(cardActv){
-        cardActv.classList.remove('Card--active');
-    }
-};
-  
+welcome.addEventListener('click', () =>{
+    optionsList.style.top="";
+   optionsList.style.transition="transform 0.4s 0.4s cubic-bezier(0.75, 0, 0.25, 1), top 0.4s cubic-bezier(0.75, 0, 0.25, 1), background 0.2s cubic-bezier(0.75, 0, 0.25, 1)";
+})
